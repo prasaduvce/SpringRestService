@@ -8,7 +8,8 @@
   <name>SpringRestService Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
-    <dependency>
+
+      <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
@@ -62,11 +63,26 @@
           <artifactId>jsp-2.1-jetty</artifactId>
           <version>6.1.26</version>
       </dependency>
+
+      <!--Apache Camel-->
+      <dependency>
+          <groupId>org.apache.camel</groupId>
+          <artifactId>camel-core</artifactId>
+          <version>${camel.version}</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.apache.camel</groupId>
+          <artifactId>camel-http</artifactId>
+          <version>${camel.version}</version>
+      </dependency>
+
   </dependencies>
 
     <properties>
-        <spring.version>3.0.5.RELEASE</spring.version>
+        <spring.version>4.1.4.RELEASE</spring.version>
         <jetty.version>9.3.0.M0</jetty.version>
+        <camel.version>2.14.1</camel.version>
     </properties>
 
   <build>

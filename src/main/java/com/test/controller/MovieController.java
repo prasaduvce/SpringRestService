@@ -14,6 +14,7 @@ public class MovieController {
 
     @RequestMapping(value = "/{name}", method = RequestMethod.GET)
     public String getMovie(@PathVariable String name, ModelMap model) {
+        System.out.println("Spring Rest webservice called ===> name "+name);
         model.addAttribute(MOVIE,name);
         return LIST;
     }
@@ -23,4 +24,5 @@ public class MovieController {
         model.addAttribute(MOVIE,"This is default movie.");
         return LIST;
     }
+
 }
